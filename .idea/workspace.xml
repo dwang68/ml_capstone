@@ -1,7 +1,682 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c09cc4aa-a421-448f-b13b-08cb07c444a3" name="Default" comment="" />
+    <list default="true" id="c09cc4aa-a421-448f-b13b-08cb07c444a3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/Filter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/NNC.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/NNM.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/ConvolutionLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/HiddenLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/Layer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/PoolingLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/layer/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/src/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/convolutional_nn/test/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/input2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/input3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1c_2s_3po.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cs_2p_3o.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1csp_2o_3.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train.amat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test.amat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid.amat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset1_1cspo_2_3.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1c_2s_3po.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1cs_2p_3o.5000.valid_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.10000.train_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.test_code/value.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/datagen.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/edge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/generate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/grammar_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/grammar_v3_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/grammar_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/image_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/image_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/interpret.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/problem1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/problem_convert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/problem_example.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/q1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/registry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/sample.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/shapedefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/standard_dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/standard_problem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/templates_v3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/templates_v5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/text_encode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/text_encode_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shapeset2_1csp_2o_3.5000.valid_code/value.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.amat" afterPath="$PROJECT_DIR$/convolutional_nn/src/shapeset2_1cspo_2_3.10000.train.amat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practices/imageSpace.py" afterPath="$PROJECT_DIR$/practices/imageSpace.py" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,11 +686,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/shapeset$ImageTranslation.coverage" NAME="ImageTranslation Coverage Results" MODIFIED="1484033871031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
+    <SUITE FILE_PATH="coverage/shapeset$Unittests_in_ForwardPropogationUnitTest__1_.coverage" NAME="Unittests in ForwardPropogationUnitTest (1) Coverage Results" MODIFIED="1488070796617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
     <SUITE FILE_PATH="coverage/shapeset$shapeset1_1cspo_2_3_10000_train_py.coverage" NAME="shapeset1_1cspo_2_3.10000.train.py Coverage Results" MODIFIED="1484180178464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/shapeset$imageSpace.coverage" NAME="imageSpace Coverage Results" MODIFIED="1483935903933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
+    <SUITE FILE_PATH="coverage/shapeset$imageSpace.coverage" NAME="imageSpace Coverage Results" MODIFIED="1487055822686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
+    <SUITE FILE_PATH="coverage/shapeset$extract.coverage" NAME="extract Coverage Results" MODIFIED="1487055960143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/shapeset$python_pool.coverage" NAME="python_pool Coverage Results" MODIFIED="1489273353858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
+    <SUITE FILE_PATH="coverage/shapeset$Unittest_ForwardPropogationUnitTest_test_flatten.coverage" NAME="Unittest ForwardPropogationUnitTest.test_flatten Coverage Results" MODIFIED="1488135959308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
+    <SUITE FILE_PATH="coverage/shapeset$main.coverage" NAME="main Coverage Results" MODIFIED="1490425389602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/src" />
     <SUITE FILE_PATH="coverage/shapeset$Blurring.coverage" NAME="Blurring Coverage Results" MODIFIED="1484171333982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
     <SUITE FILE_PATH="coverage/shapeset$edge_detection.coverage" NAME="edge_detection Coverage Results" MODIFIED="1484177353834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
+    <SUITE FILE_PATH="coverage/shapeset$Unittests_in_ForwardPropogationUnitTest.coverage" NAME="Unittests in ForwardPropogationUnitTest Coverage Results" MODIFIED="1487895115254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
+    <SUITE FILE_PATH="coverage/shapeset$numpy_playground.coverage" NAME="numpy_playground Coverage Results" MODIFIED="1489474427008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
+    <SUITE FILE_PATH="coverage/shapeset$ImageTranslation.coverage" NAME="ImageTranslation Coverage Results" MODIFIED="1487040200215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practices" />
+    <SUITE FILE_PATH="coverage/shapeset$Unittest_ForwardPropogationUnitTest_test_pooling.coverage" NAME="Unittest ForwardPropogationUnitTest.test_pooling Coverage Results" MODIFIED="1488131821050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convolutional_nn/test" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -23,79 +706,63 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="standard_problem.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/standard_problem.py">
+      <file leaf-file-name="NNC.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/NNC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2550">
-              <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-              <folding>
-                <element signature="e#2#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imageSpace.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practices/imageSpace.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="258">
+              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageTranslation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practices/ImageTranslation.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="135">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edge_detection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practices/edge_detection.py">
+      <file leaf-file-name="Input.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/Input.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shapeset2_1cspo_2_3.10000.train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <element signature="e#6#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="75" />
+            <state relative-caret-position="120">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/generate.py">
+      <file leaf-file-name="NNM.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/NNM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2402">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutputLayer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HiddenLayer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/HiddenLayer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -112,10 +779,16 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dataset</find>
       <find>fn</find>
       <find>view</find>
+      <find>dataset</find>
+      <find>Forward</find>
+      <find>empty</find>
+      <find>input</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -126,10 +799,35 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/standard_problem.py" />
-        <option value="$PROJECT_DIR$/practices/imageSpace.py" />
         <option value="$PROJECT_DIR$/practices/ImageTranslation.py" />
         <option value="$PROJECT_DIR$/practices/Blurring.py" />
         <option value="$PROJECT_DIR$/practices/edge_detection.py" />
+        <option value="$PROJECT_DIR$/practices/readme.txt" />
+        <option value="$PROJECT_DIR$/practices/imageSpace.py" />
+        <option value="$PROJECT_DIR$/extract.py" />
+        <option value="$PROJECT_DIR$/input.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/filter.py" />
+        <option value="$PROJECT_DIR$/Filter.py" />
+        <option value="$PROJECT_DIR$/Input.py" />
+        <option value="$PROJECT_DIR$/ForwardPropogation.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/main.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/ConvolutionLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/ForwardPropogation.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/test/python_pool.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/NeuralNetworkModel.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/Layer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/Filter.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/test/numpy_playground.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/ConvolutionLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/PoolingLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/HiddenLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/OutputLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/main.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/NNM.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py" />
+        <option value="$PROJECT_DIR$/convolutional_nn/src/NNC.py" />
       </list>
     </option>
   </component>
@@ -140,10 +838,28 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1481" />
-    <option name="y" value="47" />
-    <option name="width" value="1718" />
-    <option name="height" value="797" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="803" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -161,7 +877,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,97 +899,189 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shapeset2_1c_2s_3po.10000.train_code" />
+              <option name="myItemId" value="convolutional_nn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="convolutional_nn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="convolutional_nn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shapeset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="convolutional_nn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/convolutional_nn/src/layer" />
+      <recent name="$PROJECT_DIR$/convolutional_nn/src" />
+      <recent name="$PROJECT_DIR$/convolutional_nn" />
       <recent name="$PROJECT_DIR$/res" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.shapeset1_1cspo_2_3.10000.train.py">
-    <configuration default="false" name="imageSpace" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration default="false" name="Unittest ForwardPropogationUnitTest.test_pooling" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practices" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convolutional_nn/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="shapeset" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practices/imageSpace.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py" />
+      <option name="CLASS_NAME" value="ForwardPropogationUnitTest" />
+      <option name="METHOD_NAME" value="test_pooling" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ImageTranslation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Unittest ForwardPropogationUnitTest.test_flatten" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convolutional_nn/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="shapeset" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py" />
+      <option name="CLASS_NAME" value="ForwardPropogationUnitTest" />
+      <option name="METHOD_NAME" value="test_flatten" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="python_pool" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practices" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convolutional_nn/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="shapeset" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practices/ImageTranslation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_nn/test/python_pool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Blurring" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="numpy_playground" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practices" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convolutional_nn/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="shapeset" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practices/Blurring.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_nn/test/numpy_playground.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="edge_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practices" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/convolutional_nn/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="shapeset" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practices/edge_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convolutional_nn/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -866,19 +1673,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.shapeset1_1cspo_2_3.10000.train.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.imageSpace" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ImageTranslation" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Blurring" />
-      <item index="4" class="java.lang.String" itemvalue="Python.edge_detection" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest ForwardPropogationUnitTest.test_pooling" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ForwardPropogationUnitTest.test_flatten" />
+      <item index="3" class="java.lang.String" itemvalue="Python.python_pool" />
+      <item index="4" class="java.lang.String" itemvalue="Python.numpy_playground" />
+      <item index="5" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.edge_detection" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Blurring" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ImageTranslation" />
-        <item index="3" class="java.lang.String" itemvalue="Python.imageSpace" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.numpy_playground" />
+        <item index="2" class="java.lang.String" itemvalue="Python.python_pool" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest ForwardPropogationUnitTest.test_flatten" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest ForwardPropogationUnitTest.test_pooling" />
       </list>
     </recent_temporary>
   </component>
@@ -893,47 +1702,136 @@
       <option name="presentableId" value="Default" />
       <updated>1483857137076</updated>
       <workItem from="1483857139515" duration="6042000" />
-      <workItem from="1484164124323" duration="6663000" />
+      <workItem from="1484164124323" duration="9786000" />
+      <workItem from="1484551262971" duration="1381000" />
+      <workItem from="1485469763209" duration="1466000" />
+      <workItem from="1485642986651" duration="4365000" />
+      <workItem from="1485973998959" duration="230000" />
+      <workItem from="1486935882757" duration="4479000" />
+      <workItem from="1487020132199" duration="12139000" />
+      <workItem from="1487533945270" duration="9676000" />
+      <workItem from="1487617952655" duration="782000" />
+      <workItem from="1487893717107" duration="16268000" />
+      <workItem from="1488149827013" duration="4388000" />
+      <workItem from="1489120872503" duration="20896000" />
+      <workItem from="1489471508227" duration="15629000" />
+      <workItem from="1489825313857" duration="7050000" />
+      <workItem from="1490159302210" duration="6351000" />
+      <workItem from="1490245838145" duration="407000" />
+      <workItem from="1490338645809" duration="743000" />
+      <workItem from="1490425197588" duration="333000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 02m 17s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 03m 56s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 04m 51s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 05m 45s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 26m 35s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 28m 12s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 31m 00s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 32m 21s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 10h 32m 29s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_ForwardPropogationUnitTest_test_flatten - 2017.02.26 at 11h 05m 59s.xml">
+      <configuration name="Unittest ForwardPropogationUnitTest.test_flatten" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12705000" />
+    <option name="totallyTimeSpent" value="122411000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1481" y="47" width="1718" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38540146" sideWeight="0.55436337" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33136967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34020618" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34020618" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36139333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2398568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26323318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45360824" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810219" sideWeight="0.44563663" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38291606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4329897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36139333" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24606581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -947,11 +1845,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/standard_problem.py</url>
           <line>171</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/practices/imageSpace.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/practices/ImageTranslation.py</url>
@@ -978,8 +1871,56 @@
           <line>9</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/practices/imageSpace.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/test/python_pool.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/test/python_pool.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/test/numpy_playground.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/src/NNM.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="108" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -993,7 +1934,103 @@
         <state relative-caret-position="2550">
           <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
           <folding>
-            <element signature="e#2#24#0" expanded="true" />
+            <element signature="e#2#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/Input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#16#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4260">
+          <caret line="291" column="13" lean-forward="false" selection-start-line="291" selection-start-column="13" selection-end-line="291" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standard_problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+          <folding>
+            <element signature="e#2#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/Input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#16#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4260">
+          <caret line="291" column="13" lean-forward="false" selection-start-line="291" selection-start-column="13" selection-end-line="291" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standard_problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+          <folding>
+            <element signature="e#2#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1010,9 +2047,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,121 +2055,247 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24555">
           <caret line="1637" column="4" lean-forward="false" selection-start-line="1637" selection-start-column="4" selection-end-line="1637" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/input.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train.amat">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/input.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/standard_problem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-          <folding>
-            <element signature="e#2#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/res/input.jpg" />
+    <entry file="file://$PROJECT_DIR$/shapeset1_1cspo_2_3.10000.train.amat" />
     <entry file="file:///usr/local/lib/python2.7/site-packages/numpy/testing/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="746" column="0" lean-forward="false" selection-start-line="746" selection-start-column="0" selection-end-line="746" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/input2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practices/Blurring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2016.3/python_stubs/160944109/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="1509" column="4" lean-forward="false" selection-start-line="1509" selection-start-column="4" selection-end-line="1509" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practices/imageSpace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practices/ImageTranslation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practices/edge_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/res/input2.png" />
     <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.5000.valid.amat">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.py">
+    <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/generate.py" />
+    <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image_config.py" />
+    <entry file="file://$PROJECT_DIR$/practices/edge_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/image_config.py">
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="75" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="75" />
+        <state relative-caret-position="515">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train_code/image_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/Blurring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shapeset2_1c_2s_3po.10000.train_code/generate.py">
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.10000.train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2402">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#16#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/input.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/readme.txt">
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/ImageTranslation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2016.3/python_stubs/160944109/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="1337" column="4" lean-forward="false" selection-start-line="1337" selection-start-column="4" selection-end-line="1337" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standard_problem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
+          <folding>
+            <element signature="e#2#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeset2_1cspo_2_3.5000.test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices/imageSpace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/test/python_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea2016.3/python_stubs/160944109/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="317" column="7" lean-forward="true" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/Layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/site-packages/promise/promise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="332" column="0" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/NeuralNetworkModel.py" />
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/test/ForwardPropogationUnitTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/test/numpy_playground.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/PoolingLayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/ConvolutionLayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="84" lean-forward="false" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/Filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/Input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/HiddenLayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/layer/OutputLayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/NNC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convolutional_nn/src/NNM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1168,6 +2329,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 2.7.13 (/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1179,7 +2341,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>Python 2.7.13 (/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/bin/python2.7)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1196,7 +2358,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
