@@ -103,3 +103,7 @@ x = np.append(x,w, axis=0)
 
 #print(x)
 
+
+
+
+

@@ -8,7 +8,7 @@ file_info = Input(file_name, 32)
 data_pixels_nparray = file_info.data_pixels_df.as_matrix()
 shape_types_nparray = file_info.shape_type_df.as_matrix()
 
-ncc = NNC(data_pixels_nparray, shape_types_nparray, 100, 0.01)
+ncc = NNC(data_pixels_nparray, shape_types_nparray, 10, 0.1)
 ncc.learn()
 pass
 

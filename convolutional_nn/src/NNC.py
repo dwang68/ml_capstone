@@ -34,7 +34,7 @@ class NNC(object):
         l = {}
         convo_filter_num = 2
         #Construct convolutional layer
-        c = ConvolutionLayer(self.sigma * np.random.randn(convo_filter_num,3,3), 1)
+        c = ConvolutionLayer(self.sigma * np.random.randn(9, convo_filter_num), 1)
         #Construct pooling layer
         p = PoolingLayer(None, 2)
         #Construct hidden layers

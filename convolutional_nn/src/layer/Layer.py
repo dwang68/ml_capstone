@@ -14,5 +14,9 @@ class Layer(object):
     def f(self, input):
         pass
 
-    def b(self, input):
+    def b(self, gradient):
         pass
+
+
+    def update(self, g, step_size):
+        self.weights += -step_size * g

@@ -28,11 +28,15 @@ class NNM(object):
         print(o.value)
 
 
-        pass
-
-
     def bp(self):
-        pass
+        #if you don't want to pass in value, you don't need promises
+        o = self.layers["output"].b(None)
+
+        h = o.then(self.layers["hidden"].b)
+
+        p = h.then(self.layers["pooling"].b)
+        c = p.then(self.layers["convo"].b)
+
 
     def clear(self):
         for key, value in self.layers.items():
