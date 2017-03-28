@@ -11,7 +11,7 @@ class PoolingLayer(Layer):
         self.pooling_dimension = pooling_dimension
 
     def f(self, input):
-        self.input = input.reshape((input.shape[0],225,4))
+        self.input = self.convofy(input)
         self.output_index = np.argmax(self.input, axis=2)
         self.output_index_one_hot_encoded = (np.arange(self.output_index.max()+1) == self.output_index[:,:,None]).astype(int)
         self.output = np.amax(self.input, axis=2).reshape([self.input.shape[0],225])
@@ -28,6 +28,22 @@ class PoolingLayer(Layer):
     def one_hot_encoding(y):
         y_encoded = np.zeros([y.shape[0], 3])
         y_encoded[np.arange(y.shape[0]), y] = 1
+
+
+    def convofy(self, input):
+        dim = int(np.square(np.sqrt(input.shape[1])/ 2))
+        r = np.zeros([input.shape[0], dim , 4])
+        for num in range(0, input.shape[0], 1):
+            for m in range(0, 30, 2):
+                for n in range(0, 30, 2):
+                    for i in range(0, 2, 1):
+                        for j in range(0, 2, 1):
+                            r[num, 15*(m/2) + n/2, 2 * i +j ] = input[num, 30 * (m+i) + (n+j)]
+        return r
+
+
+
+
 
 
         # def max_pooling(self):

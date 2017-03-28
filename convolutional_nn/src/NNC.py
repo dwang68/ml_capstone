@@ -10,6 +10,7 @@ from convolutional_nn.src.layer.PoolingLayer import PoolingLayer
 class NNC(object):
 
     def __init__(self, x, y, batch_size, sigma):
+
         self.sigma = sigma
         self.x = x
         self.y = y
